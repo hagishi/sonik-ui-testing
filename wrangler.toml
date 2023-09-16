@@ -1,0 +1,6 @@
+name = 'demo-sonic'
+
+[[kv_namespaces]]
+binding = 'kv'
+id = 'aaaa'
+preview_id = 'memo'
