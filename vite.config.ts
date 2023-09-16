@@ -8,13 +8,13 @@ export default defineConfig({
     "process.env": process.env,
   },
   plugins: [
-    devServer({
-      entry: "./app/server.ts",
-      cf: {
-        kvNamespaces: ["kv"],
+    sonik({
+      devServer: {
+        cf: {
+          kvNamespaces: ["kv"],
+        },
       },
     }),
-    sonik(),
     pages(),
   ],
 })
